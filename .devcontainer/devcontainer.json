@@ -1,0 +1,9 @@
+{
+  "name": "RoboHeads ROS 2 Jazzy",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "ubuntu",
+  "containerEnv": { "ROS_DOMAIN_ID": "0" },
+  // ~/ros2_ws points into the repo, so the code survives when the container is deleted
+  "postCreateCommand": "mkdir -p ${containerWorkspaceFolder}/ros2_ws/src && ln -sfn ${containerWorkspaceFolder}/ros2_ws ~/ros2_ws && grep -q jazzy ~/.bashrc || echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc",
+  "customizations": { "vscode": { "extensions": ["ms-python.python"] } }
+}
