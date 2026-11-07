@@ -1,0 +1,39 @@
+running egg_info
+creating ../../../build/talker_listener/talker_listener.egg-info
+writing ../../../build/talker_listener/talker_listener.egg-info/PKG-INFO
+writing dependency_links to ../../../build/talker_listener/talker_listener.egg-info/dependency_links.txt
+writing entry points to ../../../build/talker_listener/talker_listener.egg-info/entry_points.txt
+writing requirements to ../../../build/talker_listener/talker_listener.egg-info/requires.txt
+writing top-level names to ../../../build/talker_listener/talker_listener.egg-info/top_level.txt
+writing manifest file '../../../build/talker_listener/talker_listener.egg-info/SOURCES.txt'
+reading manifest file '../../../build/talker_listener/talker_listener.egg-info/SOURCES.txt'
+writing manifest file '../../../build/talker_listener/talker_listener.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspaces/roboheads-playground/build/talker_listener/build
+creating /workspaces/roboheads-playground/build/talker_listener/build/lib
+creating /workspaces/roboheads-playground/build/talker_listener/build/lib/talker_listener
+copying talker_listener/talker.py -> /workspaces/roboheads-playground/build/talker_listener/build/lib/talker_listener
+copying talker_listener/listener.py -> /workspaces/roboheads-playground/build/talker_listener/build/lib/talker_listener
+copying talker_listener/__init__.py -> /workspaces/roboheads-playground/build/talker_listener/build/lib/talker_listener
+running install
+running install_lib
+creating /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener
+copying /workspaces/roboheads-playground/build/talker_listener/build/lib/talker_listener/talker.py -> /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener
+copying /workspaces/roboheads-playground/build/talker_listener/build/lib/talker_listener/listener.py -> /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener
+copying /workspaces/roboheads-playground/build/talker_listener/build/lib/talker_listener/__init__.py -> /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener
+byte-compiling /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener/talker.py to talker.cpython-312.pyc
+byte-compiling /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener/listener.py to listener.cpython-312.pyc
+byte-compiling /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /workspaces/roboheads-playground/install/talker_listener/share/ament_index
+creating /workspaces/roboheads-playground/install/talker_listener/share/ament_index/resource_index
+creating /workspaces/roboheads-playground/install/talker_listener/share/ament_index/resource_index/packages
+copying resource/talker_listener -> /workspaces/roboheads-playground/install/talker_listener/share/ament_index/resource_index/packages
+copying package.xml -> /workspaces/roboheads-playground/install/talker_listener/share/talker_listener
+running install_egg_info
+Copying ../../../build/talker_listener/talker_listener.egg-info to /workspaces/roboheads-playground/install/talker_listener/lib/python3.12/site-packages/talker_listener-0.1.0-py3.12.egg-info
+running install_scripts
+Installing listener script to /workspaces/roboheads-playground/install/talker_listener/lib/talker_listener
+Installing talker script to /workspaces/roboheads-playground/install/talker_listener/lib/talker_listener
+writing list of installed files to '/workspaces/roboheads-playground/build/talker_listener/install.log'
