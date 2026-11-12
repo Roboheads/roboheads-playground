@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'talker = bridge_pkg.Talker:main',
+            'listener = bridge_pkg.Listener:main'
         ],
     },
 )
