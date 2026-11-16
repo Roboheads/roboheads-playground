@@ -10,7 +10,8 @@
     // Pylance doesn't inherit the sourced ROS env, so point it at the ROS python packages
     "settings": { "python.analysis.extraPaths": [
       "/opt/ros/jazzy/lib/python3.12/site-packages",
-      "${containerWorkspaceFolder}/ros2_ws/install/bridge_pkg/lib/python3.12/site-packages"
+      "${containerWorkspaceFolder}/ros2_ws/install/bridge_pkg/lib/python3.12/site-packages",
+      "${containerWorkspaceFolder}/ros2_ws/install/bridge_interfaces/lib/python3.12/site-packages"
     ] }
   } }
 }
