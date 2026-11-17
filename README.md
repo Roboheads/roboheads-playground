@@ -15,3 +15,13 @@ Practice repo for the first RoboHeads training (Git + GitHub). Nothing here matt
 9. On GitHub, open a **Pull Request** from your branch to `Roboheads/roboheads-playground` `main`.
 
 Use `git status` after every step.
+
+## ROS 2 + Gazebo + RViz (dev container)
+
+You only need Docker Desktop and VS Code with the Dev Containers extension. Same steps on Windows, Mac and Linux.
+
+1. Open the repo in VS Code and choose **Reopen in Container** (first build takes a few minutes).
+2. Open <http://localhost:6080> in your browser and click **Connect**. Password: `vscode`. This is the container's desktop.
+3. In the VS Code terminal (inside the container) run `rviz2`, or the TurtleBot3 launch. The windows appear in the browser desktop.
+
+Rendering is on the CPU, so Gazebo can be slow. That is expected.

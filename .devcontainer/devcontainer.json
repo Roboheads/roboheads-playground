@@ -2,7 +2,19 @@
   "name": "RoboHeads ROS 2 Jazzy",
   "build": { "dockerfile": "Dockerfile" },
   "remoteUser": "ubuntu",
-  "containerEnv": { "ROS_DOMAIN_ID": "0" },
+  "containerEnv": {
+    "ROS_DOMAIN_ID": "0",
+    "TURTLEBOT3_MODEL": "waffle_pi",
+    // CPU rendering inside the virtual desktop (no GPU needed)
+    "LIBGL_ALWAYS_SOFTWARE": "1",
+    // virtual desktop size (feature default 1440x768 is too small for the Gazebo window)
+    "VNC_RESOLUTION": "1920x1080x24"
+  },
+  // Virtual desktop in the browser: http://localhost:6080 (password: vscode). Same on Windows/Mac/Linux.
+  // The feature sets DISPLAY=:1 itself.
+  "features": { "ghcr.io/devcontainers/features/desktop-lite:1": {} },
+  "forwardPorts": [6080],
+  "portsAttributes": { "6080": { "label": "Desktop (noVNC)", "onAutoForward": "notify" } },
   // ~/ros2_ws points into the repo, so the code survives when the container is deleted
   "postCreateCommand": "mkdir -p ${containerWorkspaceFolder}/ros2_ws/src && ln -sfn ${containerWorkspaceFolder}/ros2_ws ~/ros2_ws && grep -q jazzy ~/.bashrc || echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc",
   "customizations": { "vscode": {
